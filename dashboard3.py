@@ -53,6 +53,7 @@ month_mapping = {'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4,
 mwh_to_co2_pt = 185.0             #kg_co2/MWh
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 # Define layout
 app.layout = html.Div([
@@ -483,5 +484,5 @@ def generate_budget_bar_plot(budget_option):
         return html.Div()  # Return an empty Div if an invalid option is selected
 
 
-#if __name__ == '__main__':
-#    app.run_server(debug=False)
+if __name__ == '__main__':
+    app.run_server(debug=False)
