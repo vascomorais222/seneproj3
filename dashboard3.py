@@ -483,5 +483,5 @@ def generate_budget_bar_plot(budget_option):
         return html.Div()  # Return an empty Div if an invalid option is selected
 
 
-if __name__ == '__main__':
-    app.run_server(debug=False)
+#if __name__ == '__main__':
+#    app.run_server(debug=False)
